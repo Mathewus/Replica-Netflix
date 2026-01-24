@@ -1,0 +1,444 @@
+body {
+
+    background-color: #141414;
+}
+
+.cabecalho {
+
+    background: linear-gradient(to bottom, #000000bd, #0000007a, #00000002);
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 2;
+    width: 100%;
+    transition: .2s linear;
+}
+
+.cabecalho.active {
+
+    background-color: #000;
+
+}
+
+.cabecalho #bloco1 {
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.cabecalho #bloco2 {
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.3rem;
+    color: #fff;
+
+}
+
+.cabecalho #bloco2 .nome-perfil {
+
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+.cabecalho #bloco2 #perfil {
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+
+.cabecalho #bloco2 #perfil .icon {
+
+    font-size: 0.9rem;
+    transition: .2s linear;
+}
+
+.cabecalho #bloco2 #perfil:hover .icon {
+
+    transform: rotateZ(180deg);
+}
+
+.cabecalho #bloco2 #perfil img {
+
+    border-radius: 5px;
+}
+
+
+.cabecalho #perfil #perfil-menu {
+
+    background-color: #000;
+    position: absolute;
+    padding: 1rem 5rem 2rem 1rem;
+    top: 5rem;
+    right: 3rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s linear;
+
+}
+
+.cabecalho #perfil:hover #perfil-menu {
+
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.cabecalho #perfil #perfil-menu ul {
+
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    flex-direction: column;
+    color: #fff;
+
+}
+
+
+.cabecalho #perfil #perfil-menu a {
+
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.9rem;
+
+}
+
+
+.cabecalho #logo {
+
+    width: 102px;
+    height: 102px;
+}
+
+#menu {
+
+    display: flex;
+    gap: 20px;
+    font-size: 0.91rem;
+    padding-bottom: 0.4rem;
+}
+
+#menu a {
+
+    color: #e5e5e5;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+#menu a:hover {
+
+    color: #a8a4a4;
+
+}
+
+
+#banner #fundo {
+
+    background-image: url("../imagens/background-fundo_Netflix.jpg");
+    width: 100%;
+    height: 115vh;
+    /* min-height: 120vh; */
+    background-size: cover;
+
+}
+
+#banner #fundo::after {
+
+    content: "";
+    background: linear-gradient(to bottom, rgba(20, 20, 20, 0.151), rgb(20, 20, 20), rgb(20, 20, 20), rgb(20, 20, 20));
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    top: 109%;
+}
+
+
+#banner #descricao {
+
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    top: 10vw;
+    left: 50px;
+}
+
+#descricao #logo_fundo {
+
+    width: 35vw;
+}
+
+#descricao #info {
+
+    color: #fff;
+    width: 50%;
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+#descricao #botoes {
+
+    display: flex;
+    gap: 10px;
+    /* width: 400px; */
+    width: 25vw;
+    margin-top: 1vw;
+}
+
+#descricao #botoes button {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 0.65rem;
+}
+
+
+#descricao #botoes #button1 {
+
+    background-color: #fdfdfd;
+    border: none;
+    color: #000;
+    width: 35vw;
+    gap: 10px;
+}
+
+#descricao #botoes #button2 {
+
+    background-color: #636262be;
+    border: none;
+    color: #fff;
+    width: 58vw;
+    gap: 10px;
+}
+
+
+#botoes .button-icon {
+
+    font-size: 1.55rem;
+}
+
+.title {
+
+    color: #e5e5e5;
+    font-size: 1.4vw;
+    padding-left: 3rem;
+}
+
+
+.sessoes {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    z-index: 1;
+    top: 43vw;
+}
+
+.catalogos {
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow: hidden;
+}
+
+
+.container-slider {
+
+    position: relative;
+
+}
+
+.carrossel-slider {
+
+    position: relative;
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: hidden;
+    width: 1000%;
+    transform: translateX(48px);
+    transition: transform ease-in-out .4s;
+
+}
+
+
+
+.carrossel-slider.movein1 {
+
+    animation: animation1 .4s;
+}
+
+.carrossel-slider.movein2 {
+
+    animation: animation2 .4s;
+}
+
+@keyframes animation1 {
+
+    from {
+
+        transform: translateX(0);
+    }
+
+    to {
+
+        transform: translateX(-1250px);
+
+    }
+}
+
+@keyframes animation2 {
+
+    from {
+
+        transform: translateX(-1250px);
+    }
+
+    to {
+
+        transform: translateX(0);
+    }
+
+}
+
+.carrossel-background {
+
+    position: absolute;
+    background: linear-gradient(to right, #00000000, #00000056, #000000, #000000, #000000, #000000, #000000, #000000, #000000);
+    width: 100%;
+    height: 150px;
+}
+
+.slider-wrapper {
+
+    display: flex;
+    gap: 5px;
+    width: 90vw;
+}
+
+
+.slider-wrapper .slider-items {
+
+    background-color: #3f3a3a;
+    width: 20%;
+    min-width: 20%;
+    max-height: 140px;
+    min-height: 140px;
+    border-radius: 3px;
+
+
+}
+
+.slider-wrapper .slider-items img {
+
+    width: 100%;
+    height: 100%;
+}
+
+.slider-wrapper .swiper-slide-button {
+
+    position: absolute;
+    color: #fff;
+    margin-top: -55px;
+    transition: 0.2s ease;
+}
+
+.slider-wrapper .swiper-slide-button:hover {
+    color: #4658ff;
+}
+
+.arrows-icons {
+
+    position: absolute;
+    cursor: pointer;
+    /* background-color: #00000044; */
+    padding: 3rem 1rem 3rem 1rem;
+    top: 0;
+    font-size: 2.7rem;
+    color: #FFF;
+    display: none;
+    transition: all ease-in 0.2s;
+}
+
+.arrows-icons:hover {
+
+    background-color: #00000033;
+    font-size: 3rem;
+}
+
+.container-slider:hover .arrows-icons{
+
+    display: block;
+}
+
+#arrow-prev {
+
+    left: 0;
+}
+
+#arrow-next {
+
+    right: 0;
+}
+
+.rodape {
+
+    margin: 70px auto 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    color: #979393;
+
+}
+
+.rodape .links-rodape ul{
+
+    display: flex;
+    gap: 2rem;
+    font-size: 1.4rem;
+    color: #FFF;
+
+}
+
+.rodape .info-rodape {
+
+    display: flex;
+    gap: 5rem;
+    font-size: 0.90rem;
+
+}
+
+.rodape .info-rodape ul {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.rodape .copiright-rodape {
+
+    font-size: 0.80rem;
+
+}
