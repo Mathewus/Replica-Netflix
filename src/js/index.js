@@ -7,31 +7,32 @@ const cabecalho = document.querySelector(".cabecalho");
 window.addEventListener("scroll", () => {
 
 
-if (window.pageYOffset > 10) {
+    if (window.pageYOffset > 10) {
 
-    cabecalho.classList.add("active");
+        cabecalho.classList.add("active");
 
-    // console.log(window.pageYOffset);
+        // console.log(window.pageYOffset);
 
-} else {
+    } else {
 
-    cabecalho.classList.remove("active");
-}
+        cabecalho.classList.remove("active");
+    }
 
 })
+
 
 // Função para passar slides
 
 function showCatalogo1(n) {
 
-let catalogo1 = document.querySelector("#catalogo1");
-let carrosselSlider1 = catalogo1.querySelector(".carrossel-slider");
-let slides = catalogo1.getElementsByClassName("slider-wrapper");
-const primeiroSlide = slides[0];
-const ultimoSlide = slides[2];
+    let catalogo1 = document.querySelector("#catalogo1");
+    let carrosselSlider1 = catalogo1.querySelector(".carrossel-slider");
+    let slides = catalogo1.getElementsByClassName("slider-wrapper");
+    const primeiroSlide = slides[0];
+    const ultimoSlide = slides[2];
 
 
-if (n < 0) {
+    if (n < 0) {
 
         counter = 0;
 
@@ -56,7 +57,7 @@ if (n < 0) {
         carrosselSlider1.classList.add("movein1"); // adicionando a 1º classe de animação do movimento dos slides
     }
 
-    let moviment = 1250 * counter; // variável recebe o valor responsável por controlar o movimento do carrosselSlider, que armazena a largura dos slides dos personagens multiplicado pelo valor do "counter"
+    let moviment = 1350 * counter; // variável recebe o valor responsável por controlar o movimento do carrosselSlider, que armazena a largura dos slides dos personagens multiplicado pelo valor do "counter"
 
     // if (innerWidth < 1200) { // se "innerWidth" (largura da viewport) for menor que 1200px "moviment" irá receber um valor referente ao tamanho dos slides dos personagens que serão redimensionados 
 
@@ -70,16 +71,18 @@ if (n < 0) {
 
     carrosselSlider1.style.transform = `translateX(${-moviment}px)`; // comando responsável por movimentar o carrossel verticalmente usando a propriedade "transform" do style. 
 
+    console.log(counter)
+
 }
 function showCatalogo2(n) {
 
-let catalogo2 = document.querySelector("#catalogo2");
-let carrosselSlider2 = catalogo2.querySelector(".carrossel-slider");
-let slides = catalogo2.getElementsByClassName("slider-wrapper");
-const primeiroSlide = slides[0];
-const ultimoSlide = slides[2];
+    let catalogo2 = document.querySelector("#catalogo2");
+    let carrosselSlider2 = catalogo2.querySelector(".carrossel-slider");
+    let slides = catalogo2.getElementsByClassName("slider-wrapper");
+    const primeiroSlide = slides[0];
+    const ultimoSlide = slides[2];
 
-if (n < 0) {
+    if (n < 0) {
 
         counter = 0;
 
@@ -104,7 +107,7 @@ if (n < 0) {
         carrosselSlider2.classList.add("movein1"); // adicionando a 1º classe de animação do movimento dos slides
     }
 
-    let moviment = 1250 * counter; // variável recebe o valor responsável por controlar o movimento do carrosselSlider, que armazena a largura dos slides dos personagens multiplicado pelo valor do "counter"
+    let moviment = 1350 * counter; // variável recebe o valor responsável por controlar o movimento do carrosselSlider, que armazena a largura dos slides dos personagens multiplicado pelo valor do "counter"
 
     // if (innerWidth < 1200) { // se "innerWidth" (largura da viewport) for menor que 1200px "moviment" irá receber um valor referente ao tamanho dos slides dos personagens que serão redimensionados 
 
@@ -121,13 +124,13 @@ if (n < 0) {
 }
 function showCatalogo4(n) {
 
-let catalogo4 = document.querySelector("#catalogo4");
-let carrosselSlider4 = catalogo4.querySelector(".carrossel-slider");
-let slides = catalogo4.getElementsByClassName("slider-wrapper");
-const primeiroSlide = slides[0];
-const ultimoSlide = slides[2];
+    let catalogo4 = document.querySelector("#catalogo4");
+    let carrosselSlider4 = catalogo4.querySelector(".carrossel-slider");
+    let slides = catalogo4.getElementsByClassName("slider-wrapper");
+    const primeiroSlide = slides[0];
+    const ultimoSlide = slides[2];
 
-if (n < 0) {
+    if (n < 0) {
 
         counter = 0;
 
@@ -152,7 +155,7 @@ if (n < 0) {
         carrosselSlider4.classList.add("movein1"); // adicionando a 1º classe de animação do movimento dos slides
     }
 
-    let moviment = 1250 * counter; // variável recebe o valor responsável por controlar o movimento do carrosselSlider, que armazena a largura dos slides dos personagens multiplicado pelo valor do "counter"
+    let moviment = 1350 * counter; // variável recebe o valor responsável por controlar o movimento do carrosselSlider, que armazena a largura dos slides dos personagens multiplicado pelo valor do "counter"
 
     // if (innerWidth < 1200) { // se "innerWidth" (largura da viewport) for menor que 1200px "moviment" irá receber um valor referente ao tamanho dos slides dos personagens que serão redimensionados 
 
@@ -169,13 +172,13 @@ if (n < 0) {
 }
 function showCatalogo5(n) {
 
-let catalogo5 = document.querySelector("#catalogo5");
-let carrosselSlider5 = catalogo5.querySelector(".carrossel-slider");
-let slides = catalogo5.getElementsByClassName("slider-wrapper");
-const primeiroSlide = slides[0];
-const ultimoSlide = slides[2];
+    let catalogo5 = document.querySelector("#catalogo5");
+    let carrosselSlider5 = catalogo5.querySelector(".carrossel-slider");
+    let slides = catalogo5.getElementsByClassName("slider-wrapper");
+    const primeiroSlide = slides[0];
+    const ultimoSlide = slides[2];
 
-if (n < 0) {
+    if (n < 0) {
 
         counter = 0;
 
@@ -200,7 +203,7 @@ if (n < 0) {
         carrosselSlider5.classList.add("movein1"); // adicionando a 1º classe de animação do movimento dos slides
     }
 
-    let moviment = 1250 * counter; // variável recebe o valor responsável por controlar o movimento do carrosselSlider, que armazena a largura dos slides dos personagens multiplicado pelo valor do "counter"
+    let moviment = 1350 * counter; // variável recebe o valor responsável por controlar o movimento do carrosselSlider, que armazena a largura dos slides dos personagens multiplicado pelo valor do "counter"
 
     // if (innerWidth < 1200) { // se "innerWidth" (largura da viewport) for menor que 1200px "moviment" irá receber um valor referente ao tamanho dos slides dos personagens que serão redimensionados 
 
@@ -217,13 +220,13 @@ if (n < 0) {
 }
 function showCatalogo6(n) {
 
-let catalogo6 = document.querySelector("#catalogo6");
-let carrosselSlider6 = catalogo6.querySelector(".carrossel-slider");
-let slides = catalogo6.getElementsByClassName("slider-wrapper");
-const primeiroSlide = slides[0];
-const ultimoSlide = slides[2];
+    let catalogo6 = document.querySelector("#catalogo6");
+    let carrosselSlider6 = catalogo6.querySelector(".carrossel-slider");
+    let slides = catalogo6.getElementsByClassName("slider-wrapper");
+    const primeiroSlide = slides[0];
+    const ultimoSlide = slides[2];
 
-if (n < 0) {
+    if (n < 0) {
 
         counter = 0;
 
@@ -248,7 +251,7 @@ if (n < 0) {
         carrosselSlider6.classList.add("movein1"); // adicionando a 1º classe de animação do movimento dos slides
     }
 
-    let moviment = 1250 * counter; // variável recebe o valor responsável por controlar o movimento do carrosselSlider, que armazena a largura dos slides dos personagens multiplicado pelo valor do "counter"
+    let moviment = 1350 * counter; // variável recebe o valor responsável por controlar o movimento do carrosselSlider, que armazena a largura dos slides dos personagens multiplicado pelo valor do "counter"
 
     // if (innerWidth < 1200) { // se "innerWidth" (largura da viewport) for menor que 1200px "moviment" irá receber um valor referente ao tamanho dos slides dos personagens que serão redimensionados 
 
@@ -265,13 +268,13 @@ if (n < 0) {
 }
 function showCatalogo7(n) {
 
-let catalogo7 = document.querySelector("#catalogo7");
-let carrosselSlider7 = catalogo7.querySelector(".carrossel-slider");
-let slides = catalogo7.getElementsByClassName("slider-wrapper");
-const primeiroSlide = slides[0];
-const ultimoSlide = slides[2];
+    let catalogo7 = document.querySelector("#catalogo7");
+    let carrosselSlider7 = catalogo7.querySelector(".carrossel-slider");
+    let slides = catalogo7.getElementsByClassName("slider-wrapper");
+    const primeiroSlide = slides[0];
+    const ultimoSlide = slides[2];
 
-if (n < 0) {
+    if (n < 0) {
 
         counter = 0;
 
@@ -296,7 +299,7 @@ if (n < 0) {
         carrosselSlider7.classList.add("movein1"); // adicionando a 1º classe de animação do movimento dos slides
     }
 
-    let moviment = 1250 * counter; // variável recebe o valor responsável por controlar o movimento do carrosselSlider, que armazena a largura dos slides dos personagens multiplicado pelo valor do "counter"
+    let moviment = 1350 * counter; // variável recebe o valor responsável por controlar o movimento do carrosselSlider, que armazena a largura dos slides dos personagens multiplicado pelo valor do "counter"
 
     // if (innerWidth < 1200) { // se "innerWidth" (largura da viewport) for menor que 1200px "moviment" irá receber um valor referente ao tamanho dos slides dos personagens que serão redimensionados 
 
@@ -313,13 +316,13 @@ if (n < 0) {
 }
 function showCatalogo8(n) {
 
-let catalogo8 = document.querySelector("#catalogo8");
-let carrosselSlider8 = catalogo8.querySelector(".carrossel-slider");
-let slides = catalogo8.getElementsByClassName("slider-wrapper");
-const primeiroSlide = slides[0];
-const ultimoSlide = slides[2];
+    let catalogo8 = document.querySelector("#catalogo8");
+    let carrosselSlider8 = catalogo8.querySelector(".carrossel-slider");
+    let slides = catalogo8.getElementsByClassName("slider-wrapper");
+    const primeiroSlide = slides[0];
+    const ultimoSlide = slides[2];
 
-if (n < 0) {
+    if (n < 0) {
 
         counter = 0;
 
@@ -344,7 +347,7 @@ if (n < 0) {
         carrosselSlider8.classList.add("movein1"); // adicionando a 1º classe de animação do movimento dos slides
     }
 
-    let moviment = 1250 * counter; // variável recebe o valor responsável por controlar o movimento do carrosselSlider, que armazena a largura dos slides dos personagens multiplicado pelo valor do "counter"
+    let moviment = 1350 * counter; // variável recebe o valor responsável por controlar o movimento do carrosselSlider, que armazena a largura dos slides dos personagens multiplicado pelo valor do "counter"
 
     // if (innerWidth < 1200) { // se "innerWidth" (largura da viewport) for menor que 1200px "moviment" irá receber um valor referente ao tamanho dos slides dos personagens que serão redimensionados 
 
@@ -361,13 +364,13 @@ if (n < 0) {
 }
 function showCatalogo9(n) {
 
-let catalogo9 = document.querySelector("#catalogo9");
-let carrosselSlider9 = catalogo9.querySelector(".carrossel-slider");
-let slides = catalogo9.getElementsByClassName("slider-wrapper");
-const primeiroSlide = slides[0];
-const ultimoSlide = slides[2];
+    let catalogo9 = document.querySelector("#catalogo9");
+    let carrosselSlider9 = catalogo9.querySelector(".carrossel-slider");
+    let slides = catalogo9.getElementsByClassName("slider-wrapper");
+    const primeiroSlide = slides[0];
+    const ultimoSlide = slides[2];
 
-if (n < 0) {
+    if (n < 0) {
 
         counter = 0;
 
@@ -392,7 +395,7 @@ if (n < 0) {
         carrosselSlider9.classList.add("movein1"); // adicionando a 1º classe de animação do movimento dos slides
     }
 
-    let moviment = 1250 * counter; // variável recebe o valor responsável por controlar o movimento do carrosselSlider, que armazena a largura dos slides dos personagens multiplicado pelo valor do "counter"
+    let moviment = 1350 * counter; // variável recebe o valor responsável por controlar o movimento do carrosselSlider, que armazena a largura dos slides dos personagens multiplicado pelo valor do "counter"
 
     // if (innerWidth < 1200) { // se "innerWidth" (largura da viewport) for menor que 1200px "moviment" irá receber um valor referente ao tamanho dos slides dos personagens que serão redimensionados 
 
@@ -409,13 +412,13 @@ if (n < 0) {
 }
 function showCatalogo10(n) {
 
-let catalogo10 = document.querySelector("#catalogo10");
-let carrosselSlider10 = catalogo10.querySelector(".carrossel-slider");
-let slides = catalogo10.getElementsByClassName("slider-wrapper");
-const primeiroSlide = slides[0];
-const ultimoSlide = slides[2];
+    let catalogo10 = document.querySelector("#catalogo10");
+    let carrosselSlider10 = catalogo10.querySelector(".carrossel-slider");
+    let slides = catalogo10.getElementsByClassName("slider-wrapper");
+    const primeiroSlide = slides[0];
+    const ultimoSlide = slides[2];
 
-if (n < 0) {
+    if (n < 0) {
 
         counter = 0;
 
@@ -440,7 +443,7 @@ if (n < 0) {
         carrosselSlider10.classList.add("movein1"); // adicionando a 1º classe de animação do movimento dos slides
     }
 
-    let moviment = 1250 * counter; // variável recebe o valor responsável por controlar o movimento do carrosselSlider, que armazena a largura dos slides dos personagens multiplicado pelo valor do "counter"
+    let moviment = 1350 * counter; // variável recebe o valor responsável por controlar o movimento do carrosselSlider, que armazena a largura dos slides dos personagens multiplicado pelo valor do "counter"
 
     // if (innerWidth < 1200) { // se "innerWidth" (largura da viewport) for menor que 1200px "moviment" irá receber um valor referente ao tamanho dos slides dos personagens que serão redimensionados 
 
