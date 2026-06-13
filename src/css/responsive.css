@@ -1,0 +1,527 @@
+@media (max-width: 1200px) {
+
+    #menu {
+
+        font-size: 0.70rem;
+
+    }
+
+    .carrossel-slider .slider-items {
+
+        max-width: 17.8vw;
+
+    }
+
+}
+
+@media (max-width: 1100px) {
+
+    #menu {
+
+        font-size: 0.64rem;
+
+    }
+
+    .carrossel-slider .slider-items {
+
+        min-width: 22.5vw;
+
+    }
+
+}
+
+@media (max-width: 960px) {
+
+    #descricao #info {
+
+        font-size: 0.95rem;
+    }
+
+    #descricao #botoes button {
+
+        font-size: 0.9rem;
+
+    }
+
+    #descricao #botoes #button1 {
+
+        max-width: 110px;
+        max-height: 40px;
+    }
+
+    #descricao #botoes #button2 {
+
+        max-width: 210px;
+        max-height: 40px;
+    }
+
+    #botoes .button-icon {
+
+        font-size: 1.35rem;
+    }
+
+}
+
+@media (max-width: 950px) {
+
+    .cabecalho #bloco2 #perfil .icon-perfil {
+
+        display: none;
+    }
+
+    .cabecalho {
+
+        height: 40px;
+
+    }
+
+    .cabecalho #logo {
+
+        width: 67px;
+        height: 67px;
+    }
+
+}
+
+@media (max-width: 885px) {
+
+    #menu {
+
+        display: none;
+    }
+
+    .cabecalho #bloco1 {
+
+        gap: 20px;
+
+    }
+
+    .navigation-submenu {
+
+        display: flex;
+
+    }
+
+    .navigation-submenu:hover #sub-menu {
+
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    #sub-menu {
+
+        left: 5px;
+
+    }
+
+    .rodape {
+
+        padding: 0 1.8rem;
+
+    }
+
+
+}
+
+@media (max-width: 840px) {
+
+    .cabecalho a {
+
+        max-width: 90px;
+        max-height: 90px;
+    }
+
+    .cabecalho #logo {
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .navigation-submenu {
+
+        font-size: 0.80rem;
+
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .carrossel-slider .slider-items {
+
+        min-width: 29.9vw;
+
+    }
+
+    #descricao #info {
+
+        font-size: 0.78rem;
+    }
+
+    #descricao #botoes button {
+
+        font-size: 0.67rem;
+
+    }
+
+    #descricao #botoes #button1 {
+
+        max-width: 90px;
+        max-height: 30px;
+    }
+
+    #descricao #botoes #button2 {
+
+        max-width: 140px;
+        max-height: 30px;
+    }
+
+    #botoes .button-icon {
+
+        font-size: 1.35rem;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .cabecalho a {
+
+        max-width: 75px;
+        max-height: 75px;
+    }
+
+
+    .navigation-submenu {
+
+        font-size: 0.70rem;
+
+    }
+
+    #banner #descricao {
+
+        gap: 12px;
+        top: 18%;
+
+    }
+
+    #descricao #info {
+
+        font-size: 0.69rem;
+    }
+
+    #descricao #botoes button {
+
+        font-size: 0.65rem;
+
+    }
+
+    #descricao #botoes #button1 {
+
+        max-width: 85px;
+        max-height: 25px;
+    }
+
+    #descricao #botoes #button2 {
+
+        max-width: 135px;
+        max-height: 25px;
+    }
+
+    #botoes .button-icon {
+
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 490px) {
+
+
+    .container-slider {
+        overflow-x: auto;
+        /* Ativa o scroll horizontal com o dedo */
+        scroll-snap-type: x mandatory;
+        /* Força os slides a "grudarem" nas pontas */
+        scroll-behavior: smooth;
+        /* Deixa o movimento suave */
+
+        /* Opcional: Esconde a barra de rolagem no celular para ficar mais limpo */
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .container-slider::-webkit-scrollbar {
+        display: none;
+        /* Esconde a barra no Chrome/Safari */
+    }
+
+    .carrossel-slider {
+
+        width: max-content;
+
+    }
+
+    .slider-items {
+        /* Define que cada slide deve alinhar perfeitamente ao início da tela ao scrollar */
+        scroll-snap-align: start;
+    }
+
+    .arrow-prev,
+    .arrow-next {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .cabecalho a {
+
+        max-width: 68px;
+        max-height: 68px;
+    }
+
+
+    .navigation-submenu {
+
+        font-size: 0.65rem;
+
+    }
+
+    .carrossel-slider .slider-items {
+
+        min-width: 41vw;
+    }
+
+    #descricao #info {
+
+        width: 85%;
+        font-size: 0.63rem;
+    }
+
+    #descricao #botoes button {
+
+        font-size: 0.63rem;
+
+    }
+
+    #descricao #botoes #button1 {
+
+        max-width: 75px;
+        max-height: 25px;
+    }
+
+    #descricao #botoes #button2 {
+
+        max-width: 127px;
+        max-height: 25px;
+    }
+
+    #botoes .button-icon {
+
+        font-size: 0.87rem;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .cabecalho .icon-search {
+
+        display: none;
+    }
+
+    .cabecalho a {
+
+        max-width: 60px;
+        max-height: 60px;
+    }
+
+
+    .navigation-submenu {
+
+        font-size: 0.60rem;
+
+    }
+
+}
+
+@media (max-width: 370px) {
+
+    .cabecalho {
+
+        padding-left: 5px;
+        padding-right: 5px;
+
+    }
+
+    .cabecalho a {
+
+        max-width: 54px;
+        max-height: 54px;
+    }
+
+
+    .navigation-submenu {
+
+        font-size: 0.54rem;
+
+    }
+
+    #descricao #info {
+
+        width: 85%;
+        font-size: 0.53rem;
+    }
+
+    #descricao #botoes button {
+
+        font-size: 0.55rem;
+
+    }
+
+    #descricao #botoes #button1 {
+
+        max-width: 70px;
+        max-height: 18px;
+    }
+
+    #descricao #botoes #button2 {
+
+        max-width: 117px;
+        max-height: 18px;
+    }
+
+    #botoes .button-icon {
+
+        font-size: 0.80rem;
+    }
+
+}
+
+@media (max-width: 290px) {
+
+    .cabecalho a {
+
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+
+    .navigation-submenu {
+
+        font-size: 0.40rem;
+
+    }
+
+    #banner #descricao {
+
+        gap: 4px;
+
+    }
+
+    #descricao #info {
+
+        width: 95%;
+        font-size: 0.48rem;
+    }
+
+    #descricao #botoes button {
+
+        font-size: 0.47rem;
+
+    }
+
+    #descricao #botoes #button1 {
+
+        max-width: 68px;
+        max-height: 5px;
+    }
+
+    #descricao #botoes #button2 {
+
+        max-width: 105px;
+        max-height: 5px;
+    }
+
+    #botoes .button-icon {
+
+        font-size: 0.78rem;
+    }
+
+}
+
+@media (max-width: 260px) {
+
+    #banner #descricao {
+
+        left: 0;
+
+    }
+
+    #descricao #info {
+
+        font-size: 0.43rem;
+    }
+
+    #descricao #botoes button {
+
+        font-size: 0.43rem;
+
+    }
+
+    #descricao #botoes #button1 {
+
+        max-width: 65px;
+        max-height: 2px;
+    }
+
+    #descricao #botoes #button2 {
+
+        max-width: 98px;
+        max-height: 2px;
+    }
+
+    #botoes .button-icon {
+
+        font-size: 0.69rem;
+    }
+
+}
+
+@media (max-width: 220px) {
+
+    .cabecalho a {
+
+        max-width: 25px;
+        max-height: 25px;
+    }
+
+
+    .navigation-submenu {
+
+        font-size: 0.25rem;
+
+    }
+
+}
+
+@media (max-width: 190px) {
+
+    .cabecalho a {
+
+        min-width: 22px;
+        min-height: 22px;
+    }
+
+
+    .navigation-submenu {
+
+        font-size: 0.21rem;
+
+    }
+
+}

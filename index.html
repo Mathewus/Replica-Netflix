@@ -8,6 +8,7 @@
     <title>Netflix</title>
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
     <link rel="stylesheet" href="./src/css/fontawesome/css/all.min.css">
     <link rel="shortcut icon" href="./src/imagens/Netflix-logo-abrev.png" type="image/x-icon">
 </head>
@@ -23,11 +24,30 @@
                 <img id="logo" src="./src/imagens/Netflix-logo.png" alt="logo Netflix">
             </a>
 
+            <div class="navigation-submenu" href="">
+                
+                <span>Navegar</span>
+
+                <ul id="sub-menu">
+
+                <li><a href="">Início</a></li>
+                <li><a href="">Séries</a></li>
+                <li><a href="">Filmes</a></li>
+                <li><a href="">Jogos</a></li>
+                <li><a href="">Bombando</a></li>
+                <li><a href="">Minha lista</a></li>
+                <li><a href="">Navegar por idiomas</a></li>
+
+            </ul>
+
+            </div>
+
             <ul id="menu">
 
                 <li><a href="">Início</a></li>
                 <li><a href="">Séries</a></li>
                 <li><a href="">Filmes</a></li>
+                <li><a href="">Jogos</a></li>
                 <li><a href="">Bombando</a></li>
                 <li><a href="">Minha lista</a></li>
                 <li><a href="">Navegar por idiomas</a></li>
@@ -38,20 +58,28 @@
 
         <div id="bloco2">
 
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <span class="nome-perfil">Infantil</span>
-            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-magnifying-glass icon-search"></i>
+            <i class="fa-regular fa-bell icon-bell"></i>
             <div id="perfil">
                 <img src="./src/imagens/perfil1.png" alt="perfil">
-                <i class="icon fa-solid fa-sort-down"></i>
+                <i class="icon-perfil fa-solid fa-sort-down"></i>
 
                 <div id="perfil-menu">
 
-                    <ul>
-                        <li class="itens"><a href=""><img src="./src/imagens/perfil1.png" alt="perfil"> Usuários</a></li>
-                        <li class="itens"><a href=""><img src="./src/imagens/perfil1.png" alt="perfil"> Usuários</a></li>
-                        <li class="itens"><a href=""><img src="./src/imagens/perfil1.png" alt="perfil"> Usuários</a></li>
-                        <li class="itens"><a href=""><img src="./src/imagens/perfil1.png" alt="perfil"> Usuários</a></li>
+                    <ul id="perfil-menu-division1">
+                        <li class="itens"><a href=""><img src="./src/imagens/perfil2.png" alt="perfil"> Cameron</a></li>
+                        <li class="itens"><a href=""><img src="./src/imagens/perfil3.png" alt="perfil"> Sebastian</a></li>
+                        <li class="itens"><a href=""><img src="./src/imagens/perfil4.png" alt="perfil"> Nick</a></li>
+                        <li class="itens"><a href=""><img src="./src/imagens/perfil5.png" alt="perfil"> Felicity</a></li>
+                    </ul>
+                    <ul id="perfil-menu-division2">
+                        <li class="itens"><a href=""><i class="perfil-menu-icon fa-solid fa-pencil"></i>Gerenciar Perfis</a></li>
+                        <li class="itens"><a href=""><i class="perfil-menu-icon fa-regular fa-share-from-square"></i>Transferir Perfil</a></li>
+                        <li class="itens"><a href=""><i class="perfil-menu-icon fa-regular fa-user"></i>Conta</a></li>
+                        <li class="itens"><a href=""><i class="perfil-menu-icon fa-regular fa-circle-question"></i>Central de Ajuda</a></li>
+                    </ul>
+                    <ul id="perfil-menu-division3">
+                        <li class="itens"><a href=""> Sair da Netflix</a></li>
                     </ul>
 
                 </div>
@@ -65,6 +93,7 @@
         <div id="banner">
 
             <div id="fundo">
+                <img src="./src/imagens/background-fundo_Netflix.jpg" alt="Fundo do banner">
             </div>
 
             <div id="descricao">
@@ -92,7 +121,6 @@
 
                     <div class="carrossel-slider">
 
-                        <div class="slider-wrapper">
 
                             <div class="slider-items">
                                 <img src="./src/imagens/cat1-card1.jpg" alt="">
@@ -111,8 +139,6 @@
                             </div>
 
 
-                        </div>
-                        <div class="slider-wrapper">
 
                             <div class="slider-items">
                                 <img src="./src/imagens/cat1-card6.jpg" alt="">
@@ -131,8 +157,6 @@
                             </div>
 
 
-                        </div>
-                        <div class="slider-wrapper">
 
                             <div class="slider-items">
                                 <img src="./src/imagens/cat1-card11.jpg" alt="">
@@ -151,14 +175,17 @@
                             </div>
 
 
-                        </div>
 
-                        <div class="carrossel-background"></div>
+                        <!-- <div class="carrossel-background"></div> -->
 
                     </div>
 
-                    <i id="arrow-prev" class="arrows-icons fa-solid fa-chevron-left" onclick="passCarrossel1(-1)"></i>
-                    <i id="arrow-next" class="arrows-icons fa-solid fa-chevron-right" onclick="passCarrossel1(1)"></i>
+                    <div class="arrow-prev arrows-icons" data-name="#catalogo1">
+                        <i class="chevron-icon fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="arrow-next arrows-icons" data-name="#catalogo1">
+                        <i class="chevron-icon fa-solid fa-chevron-right"></i>
+                    </div>
 
                 </div>
 
@@ -172,7 +199,6 @@
 
                     <div class="carrossel-slider">
 
-                        <div class="slider-wrapper">
 
                             <div class="slider-items">
                                 <img src="./src/imagens/card-serie1.jpg" alt="">
@@ -187,15 +213,13 @@
                                 <img src="./src/imagens/card-serie4.jpg" alt="">
                             </div>
 
-                        </div>
 
-
-                        <div class="carrossel-background"></div>
+                        <!-- <div class="carrossel-background"></div> -->
                     </div>
 
                     <!-- <i id="arrow-prev" class="arrows-icons fa-solid fa-chevron-left" onclick="passCarrossel2(-1)"></i>
                     <i id="arrow-next" class="arrows-icons fa-solid fa-chevron-right" onclick="passCarrossel2(1)"></i> -->
-                    
+
                 </div>
 
             </section>
@@ -225,7 +249,6 @@
 
                     <div class="carrossel-slider">
 
-                        <div class="slider-wrapper">
 
                             <div class="slider-items">
                                 <img src="./src/imagens/cat4-card1.jpg" alt="">
@@ -243,9 +266,7 @@
                                 <img src="./src/imagens/cat4-card5.jpg" alt="">
                             </div>
 
-                        </div>
 
-                        <div class="slider-wrapper">
 
                             <div class="slider-items">
                                 <img src="./src/imagens/cat4-card6.jpg" alt="">
@@ -264,8 +285,6 @@
                             </div>
 
 
-                        </div>
-                        <div class="slider-wrapper">
 
                             <div class="slider-items">
                                 <img src="./src/imagens/cat4-card11.jpg" alt="">
@@ -284,14 +303,17 @@
                             </div>
 
 
-                        </div>
 
-                        <div class="carrossel-background"></div>
+                        <!-- <div class="carrossel-background"></div> -->
 
                     </div>
 
-                    <i id="arrow-prev" class="arrows-icons fa-solid fa-chevron-left" onclick="passCarrossel4(-1)"></i>
-                    <i id="arrow-next" class="arrows-icons fa-solid fa-chevron-right" onclick="passCarrossel4(1)"></i>
+                    <div class="arrow-prev arrows-icons" data-name="#catalogo4">
+                        <i class="chevron-icon fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="arrow-next arrows-icons" data-name="#catalogo4">
+                        <i class="chevron-icon fa-solid fa-chevron-right"></i>
+                    </div>
 
                 </div>
 
@@ -305,7 +327,6 @@
 
                     <div class="carrossel-slider">
 
-                        <div class="slider-wrapper">
 
                             <div class="slider-items">
                                 <img src="./src/imagens/cat5-card1.jpg" alt="">
@@ -324,8 +345,6 @@
                             </div>
 
 
-                        </div>
-                        <div class="slider-wrapper">
 
                             <div class="slider-items">
                                 <img src="./src/imagens/cat5-card6.jpg" alt="">
@@ -344,9 +363,7 @@
                             </div>
 
 
-                        </div>
 
-                        <div class="slider-wrapper">
 
                             <div class="slider-items">
                                 <img src="./src/imagens/cat5-card11.jpg" alt="">
@@ -365,12 +382,17 @@
                             </div>
 
 
-                        </div>
 
-                        <div class="carrossel-background"></div>
+                        <!-- <div class="carrossel-background"></div> -->
                     </div>
-                    <i id="arrow-prev" class="arrows-icons fa-solid fa-chevron-left" onclick="passCarrossel5(-1)"></i>
-                    <i id="arrow-next" class="arrows-icons fa-solid fa-chevron-right" onclick="passCarrossel5(1)"></i>
+
+                    <div class="arrow-prev arrows-icons" data-name="#catalogo5">
+                        <i class="chevron-icon fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="arrow-next arrows-icons" data-name="#catalogo5">
+                        <i class="chevron-icon fa-solid fa-chevron-right"></i>
+                    </div>
+
                 </div>
             </section>
 
@@ -382,7 +404,6 @@
 
                     <div class="carrossel-slider">
 
-                        <div class="slider-wrapper">
 
                             <div class="slider-items">
                                 <img src="./src/imagens/cat6-card1.jpg" alt="">
@@ -401,8 +422,6 @@
                             </div>
 
 
-                        </div>
-                        <div class="slider-wrapper">
 
                             <div class="slider-items">
                                 <img src="./src/imagens/cat6-card6.jpg" alt="">
@@ -421,9 +440,7 @@
                             </div>
 
 
-                        </div>
 
-                        <div class="slider-wrapper">
 
                             <div class="slider-items">
                                 <img src="./src/imagens/cat6-card11.jpg" alt="">
@@ -442,13 +459,16 @@
                             </div>
 
 
-                        </div>
-
-                        <div class="carrossel-background"></div>
+                        <!-- <div class="carrossel-background"></div> -->
 
                     </div>
-                    <i id="arrow-prev" class="arrows-icons fa-solid fa-chevron-left" onclick="passCarrossel6(-1)"></i>
-                    <i id="arrow-next" class="arrows-icons fa-solid fa-chevron-right" onclick="passCarrossel6(1)"></i>
+
+                    <div class="arrow-prev arrows-icons" data-name="#catalogo6">
+                        <i class="chevron-icon fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="arrow-next arrows-icons" data-name="#catalogo6">
+                        <i class="chevron-icon fa-solid fa-chevron-right"></i>
+                    </div>
 
                 </div>
 
@@ -462,7 +482,6 @@
 
                     <div class="carrossel-slider">
 
-                        <div class="slider-wrapper">
 
                             <div class="slider-items">
                                 <img src="./src/imagens/cat7-card1.jpg" alt="">
@@ -481,9 +500,6 @@
                             </div>
 
 
-                        </div>
-                        <div class="slider-wrapper">
-
                             <div class="slider-items">
                                 <img src="./src/imagens/cat7-card6.jpg" alt="">
                             </div>
@@ -500,10 +516,6 @@
                                 <img src="./src/imagens/cat7-card10.jpg" alt="">
                             </div>
 
-
-                        </div>
-
-                        <div class="slider-wrapper">
 
                             <div class="slider-items">
                                 <img src="./src/imagens/cat7-card11.jpg" alt="">
@@ -522,13 +534,16 @@
                             </div>
 
 
-                        </div>
-
-                        <div class="carrossel-background"></div>
+                        <!-- <div class="carrossel-background"></div> -->
                     </div>
-                    
-                    <i id="arrow-prev" class="arrows-icons fa-solid fa-chevron-left" onclick="passCarrossel7(-1)"></i>
-                    <i id="arrow-next" class="arrows-icons fa-solid fa-chevron-right" onclick="passCarrossel7(1)"></i>
+
+                    <div class="arrow-prev arrows-icons" data-name="#catalogo7">
+                        <i class="chevron-icon fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="arrow-next arrows-icons" data-name="#catalogo7">
+                        <i class="chevron-icon fa-solid fa-chevron-right"></i>
+                    </div>
+
                 </div>
             </section>
 
@@ -539,8 +554,6 @@
                 <div class="container-slider">
 
                     <div class="carrossel-slider">
-
-                        <div class="slider-wrapper">
 
                             <div class="slider-items">
                                 <img src="./src/imagens/cat8-card1.jpg" alt="">
@@ -559,9 +572,6 @@
                             </div>
 
 
-                        </div>
-                        <div class="slider-wrapper">
-
                             <div class="slider-items">
                                 <img src="./src/imagens/cat8-card6.jpg" alt="">
                             </div>
@@ -578,10 +588,6 @@
                                 <img src="./src/imagens/cat8-card10.jpg" alt="">
                             </div>
 
-
-                        </div>
-
-                        <div class="slider-wrapper">
 
                             <div class="slider-items">
                                 <img src="./src/imagens/cat8-card11.jpg" alt="">
@@ -600,13 +606,15 @@
                             </div>
 
 
-                        </div>
-
-                        <div class="carrossel-background"></div>
+                        <!-- <div class="carrossel-background"></div> -->
                     </div>
 
-                    <i id="arrow-prev" class="arrows-icons fa-solid fa-chevron-left" onclick="passCarrossel8(-1)"></i>
-                    <i id="arrow-next" class="arrows-icons fa-solid fa-chevron-right" onclick="passCarrossel8(1)"></i>
+                    <div class="arrow-prev arrows-icons" data-name="#catalogo8">
+                        <i class="chevron-icon fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="arrow-next arrows-icons" data-name="#catalogo8">
+                        <i class="chevron-icon fa-solid fa-chevron-right"></i>
+                    </div>
 
                 </div>
             </section>
@@ -619,7 +627,6 @@
 
                     <div class="carrossel-slider">
 
-                        <div class="slider-wrapper">
 
                             <div class="slider-items">
                                 <img src="./src/imagens/cat9-card1.jpg" alt="">
@@ -638,9 +645,6 @@
                             </div>
 
 
-                        </div>
-                        <div class="slider-wrapper">
-
                             <div class="slider-items">
                                 <img src="./src/imagens/cat9-card6.jpg" alt="">
                             </div>
@@ -657,10 +661,6 @@
                                 <img src="./src/imagens/cat9-card10.jpg" alt="">
                             </div>
 
-
-                        </div>
-
-                        <div class="slider-wrapper">
 
                             <div class="slider-items">
                                 <img src="./src/imagens/cat9-card11.jpg" alt="">
@@ -679,13 +679,15 @@
                             </div>
 
 
-                        </div>
-
-                        <div class="carrossel-background"></div>
+                        <!-- <div class="carrossel-background"></div> -->
                     </div>
 
-                    <i id="arrow-prev" class="arrows-icons fa-solid fa-chevron-left" onclick="passCarrossel9(-1)"></i>
-                    <i id="arrow-next" class="arrows-icons fa-solid fa-chevron-right" onclick="passCarrossel9(1)"></i>
+                    <div class="arrow-prev arrows-icons" data-name="#catalogo9">
+                        <i class="chevron-icon fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="arrow-next arrows-icons" data-name="#catalogo9">
+                        <i class="chevron-icon fa-solid fa-chevron-right"></i>
+                    </div>
 
                 </div>
             </section>
@@ -698,7 +700,6 @@
 
                     <div class="carrossel-slider">
 
-                        <div class="slider-wrapper">
 
                             <div class="slider-items">
                                 <img src="./src/imagens/cat10-card1.jpg" alt="">
@@ -717,9 +718,6 @@
                             </div>
 
 
-                        </div>
-                        <div class="slider-wrapper">
-
                             <div class="slider-items">
                                 <img src="./src/imagens/cat10-card6.jpg" alt="">
                             </div>
@@ -737,10 +735,6 @@
                             </div>
 
 
-                        </div>
-
-                        <div class="slider-wrapper">
-
                             <div class="slider-items">
                                 <img src="./src/imagens/cat10-card11.jpg" alt="">
                             </div>
@@ -757,13 +751,16 @@
                                 <img src="./src/imagens/cat10-card15.jpg" alt="">
                             </div>
 
-                        </div>
 
                         <div class="carrossel-background"></div>
                     </div>
 
-                    <i id="arrow-prev" class="arrows-icons fa-solid fa-chevron-left" onclick="passCarrossel10(-1)"></i>
-                    <i id="arrow-next" class="arrows-icons fa-solid fa-chevron-right" onclick="passCarrossel10(1)"></i>
+                    <div class="arrow-prev arrows-icons" data-name="#catalogo10">
+                        <i class="chevron-icon fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="arrow-next arrows-icons" data-name="#catalogo10">
+                        <i class="chevron-icon fa-solid fa-chevron-right"></i>
+                    </div>
 
                 </div>
             </section>
